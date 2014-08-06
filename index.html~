@@ -5,6 +5,6 @@
 </head>
 <body>
 Hallo, Welt!
-<img src="res/MplsNicollet.png" onClick="laugh()">
+<img src="res/Screenshot-45.jpg" onClick="laugh()">
 </body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE text/css />
+<!-- Most Widely Supported CSS Features:
+
+    rgba();
+    hsla();
+    opacity();
+    border-radius (except Opera)
+    canvas
+
+<!-- Library / Reference
+    background-image: url("res/MplsNicollet.png");
+    background-attachment: fixed;
+
+    border-radius: 10px;
+    -mox-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    opacity: .6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=60);
+
+#popup
+{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    padding: 20px, 20px, 20px, 20px;
+    background-color: rgb(80,80,80);
+}
+-->
+
+    Also, this might be renamed stylesheet1.css (vary by platform)
+-->
+@font-face
+{
+    font-family: 'inconsolata';
+    src: url('files/inconsolata.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body
+{
+}
+
+body
+{
+    margin: 0px;
+    font-family: Arial;
+    position: absolute;
+}
+
+a {
+    color: #000000;
+}
+.header {
+    width: 100%;
+    height: 200px;
+    background: url("res/MplsNicollet.png") 0 0;
+    z-index: 4;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: .4;
+}
+#banner {
+    position: relative;
+    top: -200px;
+    width: 100%;
+}
+.main
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align:center;
+    width: 660px;
+    height: 480px; 
+    margin-top: 200px;
+    z-index: 5;
+    background-color; rgba(0,0,0,0.5);
+}
+.images
+{
+    width: 50%;
+    text-align:center;
+    border-radius: 10px;
+    -mox-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    opacity: 1.0;
+}
+

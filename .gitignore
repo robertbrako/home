@@ -8,3 +8,8 @@ tmp/
 
 # Crash Log
 crash.log
+
+# Miscellaneous
+index.html~
+styleSelect.js~
+stylesheet.css~

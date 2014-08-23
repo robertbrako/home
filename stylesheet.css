@@ -55,11 +55,10 @@ a {
 .header {
     width: 100%;
     height: 200px;
-    background: url("res/MplsNicollet.png") 0 0;
     z-index: 4;
     overflow-x: hidden;
     overflow-y: hidden;
-    opacity: .4;
+    opacity: .7;
 }
 #banner {
     position: relative;
@@ -72,9 +71,9 @@ a {
     top: 0;
     left: 0;
     text-align:center;
-    width: 660px;
+    width: 640px;
     height: 480px; 
-    margin-top: 200px;
+    margin-top: 25%;
     z-index: 5;
     background-color; rgba(0,0,0,0.5);
 }

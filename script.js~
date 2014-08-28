@@ -13,7 +13,6 @@ function init() {
  }
 }
 
-alert("Success code 0");
 window.onload = init();
 var width = document.innerWidth;
 

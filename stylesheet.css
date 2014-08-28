@@ -98,10 +98,12 @@ img.folio
 .rightish
 {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 90%;
     width: 10%;
+    max-height: 8192px;
     overflow-x: visible;
+    overflow-y: hidden;
     background-color: rgba(0,0,0,1);
     visibility: visible;
     z-index: 2;

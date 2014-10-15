@@ -31,7 +31,7 @@ function monitorResizeTest() { // platform-dependent
   // if window.width is between [0,400], [400,800], [800,9999] { use different styleSheet; }
   if (window.outerWidth <= 480) {
     if (window.outerWidth >= 0)
-      document.getElementsByTagName("link").disabled=false;
+      // document.getElementsByTagName("link").disabled=false;
   }
   else {
     if (window.outerWidth <= 800)

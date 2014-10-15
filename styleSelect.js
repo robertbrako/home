@@ -35,8 +35,8 @@ function monitorResizeTest() { // platform-dependent
       // document.getElementsByTagName("link").disabled=false;
   }
   else {
-    if (window.outerWidth <= 800)
-        for(i=0; (a = document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
+    if (window.outerWidth >= 800)
+        for(i=0; (a = window.document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
             a.disabled=true; // test: disable stylesheet for medium size
         }
     else

@@ -31,13 +31,13 @@ function monitorResizeTest() { // platform-dependent
   // if window.width is between [0,400], [400,800], [800,9999] { use different styleSheet; }
   if (window.outerWidth <= 480) {
     if (window.outerWidth >= 0)
-      alert("narrow");
+      document.getElementsByTagName("link").disabled=false;
   }
   else {
     if (window.outerWidth <= 800)
-      alert("medium");
+      document.getElementsByTagName("link")<0>.disabled=true; // test: disable stylesheet for medium size
     else
-      alert("large");
+      return; // for now
   }
   // is window.outerWidth ever -1, or less than 0 generally?
 }

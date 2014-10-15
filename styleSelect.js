@@ -35,7 +35,7 @@ function monitorResizeTest() { // platform-dependent
   }
   else {
     if (window.outerWidth <= 800)
-      document.getElementsByTagName("link")<0>.disabled=true; // test: disable stylesheet for medium size
+      document.getElementsByTagName("link").disabled=true; // test: disable stylesheet for medium size
     else
       return; // for now
   }

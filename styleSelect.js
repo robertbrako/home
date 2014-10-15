@@ -29,13 +29,16 @@ Shaving product: Bevel by Walker & Co. shaving system - good for anyone, it seem
 **/
 function monitorResizeTest() { // platform-dependent
   // if window.width is between [0,400], [400,800], [800,9999] { use different styleSheet; }
+  var i, a;
   if (window.outerWidth <= 480) {
     if (window.outerWidth >= 0)
       // document.getElementsByTagName("link").disabled=false;
   }
   else {
     if (window.outerWidth <= 800)
-      document.getElementsByTagName("link").disabled=true; // test: disable stylesheet for medium size
+        for(i=0; (a = document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
+            a.disabled=true; // test: disable stylesheet for medium size
+        }
     else
       return; // for now
   }

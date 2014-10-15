@@ -35,14 +35,17 @@ function monitorResizeTest() { // platform-dependent
       // document.getElementsByTagName("link").disabled=false;
   }
   else {
-    if (window.outerWidth >= 800)
-        for(i=0; (a = window.document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
-            a.disabled=true; // test: disable stylesheet for medium size
-        }
+    if (window.outerWidth <= 800)
+        return; // for now
     else
-      return; // for now
+        for(i=0; (a = document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
+            if (a.getAttribute("rel").indexOf("style") != -1) {
+                a.disabled=true;
+                a.href=""; // test: disable stylesheet for medium size
+            }
+        }
   }
-  // is window.outerWidth ever -1, or less than 0 generally?
+  // Q: does window.outerWidth ever return less than 0?
 }
 
 function changeStyle (newStyle) {

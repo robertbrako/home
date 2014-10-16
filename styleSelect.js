@@ -26,9 +26,9 @@ function monitorResizeTest() {
   else if (w > 800) {
         for (var i=0; i <= document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link");
-            if (a.getAttribute("rel").indexOf("style") != -1) {
+          //  if (a.getAttribute("rel").indexOf("style") != -1) {
                 a.disabled=true;
-            }
+          //  }
         }
   }
   // Q: does window.outerWidth ever return less than 0?

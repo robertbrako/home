@@ -17,7 +17,7 @@ function monitorResizeTest() {
   var a;
   var w = getBrowserWidth();
   
-  if (w >= 0 && w <= 800) { // change max w to around 480 when ready
+  if (w >= 0 && w <= 1024) { // change max w to around 480 when ready
         for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {
@@ -35,7 +35,7 @@ function monitorResizeTest() {
         return; // for now
   }
   **/
-  else if (w > 800) {
+  else if (w > 1024) { // as it happens, old stylesheet is pretty good up to 1024
         for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {

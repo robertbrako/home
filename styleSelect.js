@@ -24,7 +24,7 @@ function monitorResizeTest() {
         return; // for now
   }
   else if (w > 800) {
-        for(i=0; (document.getElementsByTagName("link")<i>) != false; i++) {
+        for(i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")<i>;
             if (a.getAttribute("rel").indexOf("style") != -1) {
                 a.disabled=true;

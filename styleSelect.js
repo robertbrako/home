@@ -21,8 +21,11 @@ function monitorResizeTest() {
         for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {
-             if (a.href != "stylesheet.css") {
-               a.href = "stylesheet.css";
+             if (a.href == "stylesheet.css") {
+               a.disabled = false;
+             }
+             else {
+              a.disabled = true;
              }
             }
         }
@@ -36,8 +39,11 @@ function monitorResizeTest() {
         for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {
-             if (a.href != "wideStyle.css") {
-               a.href = "wideStyle.css";
+             if (a.href == "wideStyle.css") {
+               a.disabled = false;
+             }
+             else {
+              a.disabled = true;
              }
             }
         }

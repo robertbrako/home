@@ -24,11 +24,14 @@ function monitorResizeTest() {
         return; // for now
   }
   else if (w > 800) {
-        for (var i=0; i <= document.getElementsByTagName("link").length; i++) {
-            a = document.getElementsByTagName("link");
-          //  if (a.getAttribute("rel").indexOf("style") != -1) {
-                alert(document.getElementsByTagName("link")[i].getAttribute("href") + " is the value of href.");
-          //  }
+        for (var i=0; i < document.getElementsByTagName("link").length; i++) {
+            a = document.getElementsByTagName("link")[i];
+            if (a.getAttribute("rel").indexOf("style") != -1) {
+             if (a.disabled != true) {
+              a.disabled = true;
+              alert(document.getElementsByTagName("link")[i].getAttribute("href") + " is the value of href.");
+             }
+            }
         }
   }
   // Q: does window.outerWidth ever return less than 0?

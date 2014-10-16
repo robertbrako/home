@@ -27,7 +27,7 @@ function monitorResizeTest() {
         for (var i=0; i <= document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link");
           //  if (a.getAttribute("rel").indexOf("style") != -1) {
-                alert(document.getElementsByTagName("link")[i].getAttribute("rel") + " is the value of rel"
+                alert(document.getElementsByTagName("link")[i].getAttribute("href") + " is the value of href.");
           //  }
         }
   }

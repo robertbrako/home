@@ -13,7 +13,7 @@ ISSUE: should this be addressed with PHP?
     return 0;
   }
   
-function monitorResizeTest() {
+function monitorResize() {
   var a;
   var w = getBrowserWidth();
   

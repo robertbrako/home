@@ -28,8 +28,7 @@ function monitorResizeTest() {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {
              if (a.disabled != true) {
-              a.disabled = true;
-              alert(document.getElementsByTagName("link")[i].getAttribute("href") + " is the value of href.");
+               a.disabled = true;
              }
             }
         }

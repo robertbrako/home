@@ -16,6 +16,7 @@ ISSUE: should this be addressed with PHP?
 function monitorResizeTest() {
   var i, a;
   var w = getBrowserWidth();
+  
   if (w >= 0 && w <= 480) {
     document.getElementsByTagName("link").disabled=false;
   }
@@ -23,10 +24,10 @@ function monitorResizeTest() {
         return; // for now
   }
   else if (w > 800) {
-        for(i=0, (a = document.getElementsByTagName("link")<i>) != null, i++) { // am I just spinning wheels?
+        for(i=0; (document.getElementsByTagName("link")<i>) != false; i++) {
+            a = document.getElementsByTagName("link")<i>;
             if (a.getAttribute("rel").indexOf("style") != -1) {
                 a.disabled=true;
-                // a.href=""; // test: disable stylesheet for medium size
             }
         }
   }

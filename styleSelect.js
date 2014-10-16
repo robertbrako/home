@@ -39,13 +39,14 @@ function monitorResizeTest() { // platform-dependent
     if (window.outerWidth <= 800) {
         return; // for now
     }
-    else
+    else {
         for(i=0; (a = document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
             if (a.getAttribute("rel").indexOf("style") != -1) {
                 a.disabled=true;
                 a.href=""; // test: disable stylesheet for medium size
             }
         }
+    }
   }
   // Q: does window.outerWidth ever return less than 0?
 }

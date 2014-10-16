@@ -14,7 +14,7 @@ ISSUE: should this be addressed with PHP?
   }
   
 function monitorResizeTest() {
-  var i, a;
+  var a;
   var w = getBrowserWidth();
   
   if (w >= 0 && w <= 480) {
@@ -24,7 +24,7 @@ function monitorResizeTest() {
         return; // for now
   }
   else if (w > 800) {
-        for(i=0; i < document.getElementsByTagName("link").length; i++) {
+        for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")<i>;
             if (a.getAttribute("rel").indexOf("style") != -1) {
                 a.disabled=true;

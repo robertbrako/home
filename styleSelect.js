@@ -17,18 +17,27 @@ function monitorResizeTest() {
   var a;
   var w = getBrowserWidth();
   
-  if (w >= 0 && w <= 480) {
-    document.getElementsByTagName("link")[0].disabled=false;
+  if (w >= 0 && w <= 800) { // change max w to around 480 when ready
+        for (var i=0; i < document.getElementsByTagName("link").length; i++) {
+            a = document.getElementsByTagName("link")[i];
+            if (a.getAttribute("rel").indexOf("style") != -1) {
+             if (a.href != "stylesheet.css") {
+               a.href = "stylesheet.css";
+             }
+            }
+        }
   }
+  /** Ignore following until 3 sheets are utilized:
   else if (w > 480 && w <= 800) {
         return; // for now
   }
+  **/
   else if (w > 800) {
         for (var i=0; i < document.getElementsByTagName("link").length; i++) {
             a = document.getElementsByTagName("link")[i];
             if (a.getAttribute("rel").indexOf("style") != -1) {
-             if (a.disabled != true) {
-               a.disabled = true;
+             if (a.href != "wideStyle.css") {
+               a.href = "wideStyle.css";
              }
             }
         }

@@ -18,7 +18,7 @@ function monitorResizeTest() {
   var w = getBrowserWidth();
   
   if (w >= 0 && w <= 480) {
-    document.getElementsByTagName("link").disabled=false;
+    document.getElementsByTagName("link")[0].disabled=false;
   }
   else if (w > 480 && w <= 800) {
         return; // for now

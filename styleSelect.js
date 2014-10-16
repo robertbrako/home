@@ -31,12 +31,14 @@ function monitorResizeTest() { // platform-dependent
   // if window.width is between [0,400], [400,800], [800,9999] { use different styleSheet; }
   var i, a;
   if (window.outerWidth <= 480) {
-    if (window.outerWidth >= 0)
+    if (window.outerWidth >= 0) {
       // document.getElementsByTagName("link").disabled=false;
+    }
   }
   else {
-    if (window.outerWidth <= 800)
+    if (window.outerWidth <= 800) {
         return; // for now
+    }
     else
         for(i=0; (a = document.getElementsByTagName("link")<i>); i++) { // am I just spinning wheels?
             if (a.getAttribute("rel").indexOf("style") != -1) {

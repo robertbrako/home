@@ -1,7 +1,8 @@
 /** 
 script to select appropriate stylesheet
 
-ISSUE: should this be addressed with PHP?  
+ISSUE: should this be addressed with PHP?
+Update: need to learn PHP first.
 
 **/
 
